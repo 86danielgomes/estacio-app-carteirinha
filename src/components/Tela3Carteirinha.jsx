@@ -1,5 +1,4 @@
 import React from 'react';
-import StatusBar from './StatusBar';
 import AndroidNavBar from './AndroidNavBar';
 
 export default function Tela3Carteirinha({ onNavigate, onShowToast }) {
@@ -24,8 +23,6 @@ export default function Tela3Carteirinha({ onNavigate, onShowToast }) {
     <div className="tela-container tela-perfil tela-carteirinha-expandida">
       {/* Top Blue Header */}
       <header className="perfil-header">
-        <StatusBar screen="tela3" />
-
         <div className="perfil-nav-top">
           <button 
             type="button" 

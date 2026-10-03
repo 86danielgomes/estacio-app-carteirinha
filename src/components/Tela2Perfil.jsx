@@ -1,9 +1,8 @@
 import React from 'react';
-import StatusBar from './StatusBar';
 import AndroidNavBar from './AndroidNavBar';
 
 export default function Tela2Perfil({ onNavigate, onShowToast }) {
-  const matricula = '2025 0445 2397';
+  const matricula = '2024 1331 7666';
 
   const handleCopyMatricula = (e) => {
     e.stopPropagation();
@@ -12,7 +11,7 @@ export default function Tela2Perfil({ onNavigate, onShowToast }) {
         onShowToast('Matrícula copiada com sucesso!');
       })
       .catch(() => {
-        onShowToast('Matrícula: 2025 0445 2397');
+        onShowToast('Matrícula: 2024 1331 7666');
       });
   };
 
@@ -24,8 +23,6 @@ export default function Tela2Perfil({ onNavigate, onShowToast }) {
     <div className="tela-container tela-perfil">
       {/* Top Blue Header */}
       <header className="perfil-header">
-        <StatusBar screen="tela2" />
-
         <div className="perfil-nav-top">
           <button 
             type="button" 
@@ -65,26 +62,26 @@ export default function Tela2Perfil({ onNavigate, onShowToast }) {
             <div className="student-avatar-wrap">
               <img 
                 src="/rebeca_avatar.png" 
-                alt="Rebeca Santos Souza" 
+                alt="Daniel Azevedo Gomes" 
                 className="student-avatar-img" 
               />
             </div>
             <div className="student-name-block">
-              <h2 className="student-name">Rebeca Santos Souza</h2>
+              <h2 className="student-name">Daniel Azevedo Gomes</h2>
             </div>
           </div>
 
           {/* Course Details */}
           <div className="card-field-group">
             <span className="card-field-label">Curso</span>
-            <span className="card-field-value bold-value">Gestão de e-commerce</span>
+            <span className="card-field-value bold-value">Gestão de Projetos</span>
           </div>
 
           {/* Two-column Bottom Row: Validade & Matrícula */}
           <div className="card-two-col-row">
             <div className="card-col">
               <span className="card-field-label">Validade</span>
-              <span className="card-field-value bold-value">Mar 2027</span>
+              <span className="card-field-value bold-value">Jan 2028</span>
             </div>
 
             <div className="card-col matricula-col">

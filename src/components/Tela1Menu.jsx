@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import StatusBar from './StatusBar';
 import AndroidNavBar from './AndroidNavBar';
 
 export default function Tela1Menu({ onNavigate, onShowToast }) {
@@ -57,8 +56,6 @@ export default function Tela1Menu({ onNavigate, onShowToast }) {
     <div className="tela-container tela-menu">
       {/* Top Blue Header */}
       <header className="menu-header">
-        <StatusBar screen="tela1" />
-        
         <h1 className="menu-title">Menu</h1>
 
         {/* Search Bar */}
